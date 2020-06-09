@@ -13,6 +13,7 @@ TagManager:
   - Monsterlvl2
   - Monsterlvl3
   - MovingPlatform
+  - monster
   layers:
   - Default
   - TransparentFX
