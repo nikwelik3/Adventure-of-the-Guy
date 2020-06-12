@@ -141,8 +141,13 @@ public class Motion : MonoBehaviour
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex+1);
             anim.SetTrigger("isRecovering");
         }
+        if (col.gameObject.tag.Equals("PreviousZone"))
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+            anim.SetTrigger("isRecovering");
+        }
 
-        switch(col.gameObject.tag)
+        switch (col.gameObject.tag)
         {
             case "Monsterlvl1":
                 damage = 10;
